@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<script src="../js/declarations.js"></script>
+<script src="../js/functions.js"></script>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>House Party</title>
+        <link rel="stylesheet" type="text/css" href="../style/index.css">
+        <script src="https://kit.fontawesome.com/977efd3df0.js" crossorigin="anonymous"></script>
+    </head>
+    <body data-rsssl=1>
+        <img src="../logo.png" alt="House Party">
+        <h3 id="evento_especial" style="display:none"></h3>
+        <h3 id="hora" style="display:none">23:00</h3>
+        <div id="vencedores" style="display:none"></div>
+        <div id="jogadores"></div>
+        <h2 id="add" onclick="addPlayer()">Adicionar Jogador</h2>
+        <h2 id="start" onclick="startParty()">Começar festa</h2>
+        <div id="eventos" style="display:none"></div>
+        <h2 id="next" style="display:none" onclick="nextEvents()">Próximo</h2>
+    </body>
+    <footer>
+        <span class="left">BETA V2.0</span>
+        <span class="center">&copy; Dommus | &copy; Meta</span>
+        <span class="right"><i class="fas fa-glass-cheers"></i></span>
+    </footer>
+</html>
+
+<script>
+    populatePlayersArray(jogadores, adicionarJogadores);
+    populateEventsArray(eventosInicio, adicionarEventosInicio);
+    populateEventsArray(eventosPolicia, adicionarEventosPolicia);
+    populateEventsArray(eventosLuzAbaixo, adicionarEventosLuzAbaixo);
+    populateEventsArray(eventosExercito, adicionarEventosExercito);
+    populateEventsArray(eventosStrippers, adicionarEventosStrippers);
+    populateEventsArray(eventosCelebrities, adicionarEventosCelebrities);
+    populateEventsArray(eventoAfterParty, adicionarEventoAfterParty);
+    populateEventsArray(eventos, adicionarEventos);
+    populateSpecialEventsArray(eventosEspeciais, adicionarEventosEspeciais);
+
+    displayPlayerList(jogadores);
+</script>
